@@ -115,7 +115,5 @@ TODO
 
 - [ ] Clean up some functions.
 - [ ] Add options to read other elements of DICOM metadata.
-- [ ] Implement a `--max-depth=N` sort of option, like that of 
-      other existing unix command line utilities, to limit the
-      depth of descent into subdirectories.
+
        
