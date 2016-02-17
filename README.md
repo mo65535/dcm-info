@@ -3,8 +3,7 @@ dicom-info
 
 A small Python script for printing DICOM metadata info.
 
-Useful for navigating folders of images reconstructed by the scanners,
-which tend to have uninformative names and a hierarchy like
+Useful for navigating folders of images reconstructed by the scanners, which tend to have uninformative names and a hierarchy like
 
 ```
 4194_09152011/
@@ -35,21 +34,17 @@ which tend to have uninformative names and a hierarchy like
 Example usage
 =============
 
-By default it descends into subdirectories of the specified search path. If
-you have several MR exams in a folder, e.g. for a project they are part of,
-you can point this script at the project folder and get info about all the
-exams in the subdirectories.
+By default it descends into subdirectories of the specified search path.
+If you have several MR exams in a folder, e.g. for a project they are part of, you can point this script at the project folder and get info about all the exams in the subdirectories.
 
-For speed, it only reads metadata from the first DICOM file it finds
-in each folder. If you have folders that contain a mix of multiple DICOM
-series, the `--find-all-uniques` flag will force it to check all DICOM
-files (slower) and print the unique values encountered in the metadata.
+For speed, it only reads metadata from the first DICOM file it finds in each folder.
+If you have a folder that contains a mix of multiple DICOM series (this is not ideal), the `--find-all-uniques` flag will force it to check all DICOM files (slower) and print the unique values that were encountered in the metadata.
 
-Call the script with the `--help` argument for more info. Here are
-some typical use cases.
+Call the script with the `--help` argument for more info.
+Here are some typical use cases.
 
 ```bash
-cd /data/<USERNAME>/DICOMS_from_scanner/4194_09152011
+cd /data/users/<USERNAME>/DICOMS_from_scanner/4194_09152011
 dcm-info ./
 ```
 
