@@ -4,7 +4,7 @@ dicom-info
 A small Python script for printing DICOM metadata info.
 
 Useful for navigating folders of images reconstructed by the scanners,
-which tend to have opaque filenames and a hierarchy like
+which tend to have uninformative names and a hierarchy like
 
 ```
 4194_09152011/
